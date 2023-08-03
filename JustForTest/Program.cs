@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using JustForTest;
-using System.Reflection;
+﻿using System.Reflection;
 
 Console.WriteLine("Loading all the classes!");
 

@@ -1,6 +1,4 @@
 ﻿
-using JustForTest;
-
 [LoadOnDemand]
 class ParallelismExample : IExecutable
 {

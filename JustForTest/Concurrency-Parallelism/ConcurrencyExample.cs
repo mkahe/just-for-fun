@@ -1,7 +1,4 @@
-﻿using JustForTest;
-using System;
-using System.Threading;
-
+﻿
 [LoadOnDemand]
 internal class ConcurrencyExample : IExecutable
 {
