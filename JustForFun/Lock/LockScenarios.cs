@@ -1,5 +1,5 @@
 ﻿
-[LoadOnDemand]
+[LoadOnDemand("Lock - " + nameof(LockScenarios))]
 public class LockScenarios : IExecutable
 {
     static readonly object _object = new object();

@@ -1,5 +1,5 @@
 ﻿
-[LoadOnDemand]
+[LoadOnDemand("Concurrency-Parallelism - " + nameof(ParallelismCalculateHash))]
 class ParallelismExample : IExecutable
 {
     public void Main()

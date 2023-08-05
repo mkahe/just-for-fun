@@ -7,5 +7,10 @@ using System.Threading.Tasks;
 [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
 public class LoadOnDemandAttribute : Attribute
 {
-    // You can add properties or constructors to the attribute if needed.
+    public string Name { get; }
+    public LoadOnDemandAttribute(string name)
+    {
+
+        Name = name;
+    }
 }

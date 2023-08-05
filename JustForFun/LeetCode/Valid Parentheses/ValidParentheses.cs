@@ -1,7 +1,7 @@
 ﻿
 using NUnit.Framework;
 
-[LoadOnDemand]
+[LoadOnDemand("LeetCodes - " + nameof(ValidParentheses))]
 public class ValidParentheses : IExecutable
 {
     public void Main()

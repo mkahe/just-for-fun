@@ -1,5 +1,5 @@
 ﻿
-[LoadOnDemand]
+[LoadOnDemand("Concurrency-Parallelism - " + nameof(ConcurrencyExample))]
 internal class ConcurrencyExample : IExecutable
 {
     public ConcurrencyExample()

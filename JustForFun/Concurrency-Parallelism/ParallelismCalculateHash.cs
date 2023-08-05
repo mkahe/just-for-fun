@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-[LoadOnDemand]
+[LoadOnDemand("Concurrency-Parallelism - " + nameof(ParallelismCalculateHash))]
 class ParallelismCalculateHash : IExecutable
 {
     public void Main()

@@ -1,5 +1,5 @@
 ﻿
-[LoadOnDemand]
+[LoadOnDemand("Dynamic-Programming - " + nameof(DynamicFibonatcci))]
 public class DynamicFibonatcci
 {
     private readonly Dictionary<int, long> memo = new Dictionary<int, long>();
