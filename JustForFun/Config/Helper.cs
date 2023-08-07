@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-public class Helper
+public static class Helper
 {
     public static TResult LogDuration<TResult>(string methodName, Func<TResult> method)
     {
@@ -31,5 +32,15 @@ public class Helper
         sw.Stop();
 
         Console.WriteLine($"Method {methodName} took {sw.Elapsed.TotalMilliseconds} ms to execute.");
+    }
+
+    public static List<T> CreateAnonymousList<T>(params T[] elements) 
+    {
+        return new List<T>(elements);
+    }
+
+    public static string AsString(this int[] array)
+    {
+        return $"[{string.Join(", ", array)}]";
     }
 }

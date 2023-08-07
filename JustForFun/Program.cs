@@ -24,10 +24,10 @@ foreach (Type type in assembly.GetTypes())
 }
 
 
-listOfClasses = listOfClasses.OrderBy(x => x.Name).ToList();
+listOfClasses = listOfClasses.OrderBy(x => x.GetCustomAttribute<LoadOnDemandAttribute>().Name).ToList();
 foreach (var type in listOfClasses)
 {
-    Console.WriteLine($"{++index}. {type.Name}");
+    Console.WriteLine($"{++index}. {type.GetCustomAttribute<LoadOnDemandAttribute>().Name}");
 }
 
 Console.Write("Enter the number of the class to run: ");
